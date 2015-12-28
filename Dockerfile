@@ -22,7 +22,7 @@ RUN sed -i -e 's_127.0.0.1_0.0.0.0_g' /cloud9/configs/standalone.js
 # Add supervisord conf
 ADD conf/cloud9.conf /etc/supervisor/conf.d/
 
-# Make dockerfile and README self-contained in image
+# Make dockerfile and README self-contained
 ADD . /app
 
 # ------------------------------------------------------------------------------
